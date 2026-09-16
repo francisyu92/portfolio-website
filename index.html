@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Francis Yu - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -25,18 +26,44 @@
 
         <section id="projects">
             <h2>Projects</h2>
+            <article class="project-card">
+                <h3>PV Ventures | Daily Time Record and Inventory System</h3>
+                <p>This project is a web-based application designed to manage daily time records and inventory for PV Ventures. It allows employees to log their work hours and track inventory items efficiently.</p>
+                <img src="images/pv-ventures-project.png" alt="PV Ventures Project">
+            </article>
         </section>
 
         <section id="hobbies">
             <h2>My Hobbies</h2>
+            <article class="hobby-card">
+                <h3>Drawing</h3>
+                <p>I enjoy drawing as a way to express my creativity and capture ideas on paper.</p>
+                <img src="images/drawing-hobby.png" alt="Drawing Hobby">
+            </article>
         </section>
 
         <section id="thoughts">
             <h2>Thoughts</h2>
+            <article class="thought-card">
+                <h3>Reflections on Life</h3>
+                <p>Sharing my thoughts and reflections on various aspects of life, personal growth, and experiences.</p>
+            </article>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 </body>
