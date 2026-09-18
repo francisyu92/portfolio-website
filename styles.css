@@ -1,6 +1,6 @@
 /* Global Styles */
 :root {
-    --content-max-width: 1200px;
+    --content-max-width: auto;
     --margin: 0 auto;
     --padding: 25px 25px;
     --nav-height: 78px;
